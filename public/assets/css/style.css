@@ -1,0 +1,115 @@
+/* Google fonts - Poppins */
+
+/* RESET CSS */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* font-size: 62.5%; */
+    scroll-padding-top: 7rem;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh !important;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: #eee;
+}
+
+/* Variables */
+:root {
+    --container-color: #1a1e21;
+    --second-color: #3f60a8;
+    --text-color: #172317;
+    --bg-color: #eee;
+    --logo-color: #0F234E;
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.container {
+    max-width: 1368px;
+    margin: auto;
+    width: 100%;
+}
+
+.navbar-toggler {
+    font-size: 1.1rem !important;
+}
+
+.active {
+    font-weight: 500;
+    background-color: var(--logo-color) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .3s;
+}
+
+.active:hover {
+    background-color: var(--second-color) !important;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow {
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: 0.4s;
+}
+
+header.shadow .logo {
+    color: var(--text-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
