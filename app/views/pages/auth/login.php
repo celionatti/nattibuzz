@@ -32,13 +32,13 @@ use Core\Helpers;
                     </div>
                 </div>
 
-                <button class="w-100 btn btn-lg btn-dark" type="submit">Login</button>
-                <button class="w-100 btn btn-lg btn-danger my-3" type="button">Google Sign In</button>
+                <button class="w-100 btn btn-lg btn-dark bg-primary text-white" type="submit">Login</button>
+                <button class="w-100 btn btn-lg btn-danger bg-dark text-white my-3" type="button">Google Sign In</button>
                 <hr class="my-1">
-                <div class="text-muted text-center my-2">Don't have an account? <a href="<?= ROOT ?>auth/register" class="text-black">Create an Account</a></div>
+                <div class="text-center text-dark my-2">Don't have an account? <a href="<?= ROOT ?>auth/register" class="text-black">Create an Account</a></div>
 
-                <p class="my-1 text-muted text-center">&copy; 2020 - <?= date("Y"); ?></p>
-                <p class="text-muted text-center"><?= $this->getSiteTitle(); ?>, Inc. All Rights Reserved.</p>
+                <p class="my-1 text-dark text-center">&copy; 2020 - <?= date("Y"); ?></p>
+                <p class="text-dark text-center"><?= $this->getSiteTitle(); ?>, Inc. All Rights Reserved.</p>
                 </form>
             </div>
         </div>

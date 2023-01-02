@@ -6,27 +6,8 @@
 <?= $this->partial('includes/header'); ?>
 <div class="container row">
   <div class="col-md-8" style="margin-top: 1.2rem;">
-    <section class="border-bottom border-2 border-muted">
-      <!-- Create Post -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="text-primary fw-bold">Create Post</h5>
-          <textarea name="create_post" class="form-control" rows="8" placeholder="Create a Post"
-            style="resize: none;"></textarea>
-          <div class="d-flex justify-content-around align-items-center">
-            <button class="btn btn-sm my-2 bg-info text-white"><i class="bi bi-camera-video"></i>
-              Video</button>
-            <button class="btn btn-sm my-2 bg-warning text-white"><i class="bi bi-camera"></i>
-              Photo</button>
-          </div>
-          <button class="btn btn-dark w-100">Post</button>
-        </div>
-      </div>
-    </section>
 
     <section>
-      <h4 class="fst-italic">StoryLines</h4>
-      <!-- Story One -->
       <div class="card border-bottom border-2 border-muted my-2">
         <div class="card-header">
           <div class="d-flex justify-content-start align-items-center">
@@ -49,7 +30,7 @@
               class="text-primary">https://www.youtube.com/channel/UCHhGx-DD7A8jq7j_NPGN6g&</a>
 
             <a href="#">
-              <img src="<?= get_image('') ?>" alt="" class="img-fluid rounded-3 shadow-sm" style="height: 350px;" />
+              <img src="<?= get_image('') ?>" alt="" class="img-fluid rounded-3 shadow-sm" style="height: 620px;" />
             </a>
           </p>
           <div class="d-flex justify-content-evenly align-items-center">
@@ -74,6 +55,12 @@
           </div>
         </div>
         <div class="card-footer">
+          <div class="add_comment my-2">
+            <textarea class="comment_textbox form-control" rows="2"></textarea>
+            <button type="submit" class="btn btn-primary btn-sm w-100 bg-primary text-white add_comment_btn my-2">Add
+              Comment</button>
+          </div>
+
           <div id="comment">
             <div class="d-flex justify-content-start align-items-center">
               <div>
@@ -89,23 +76,13 @@
               This will be the comment section.This will be the comment section.This will be the comment section.This
               will be the comment section.
             </p>
-          </div>
-          <div id="comment">
-            <div class="d-flex justify-content-start align-items-center">
-              <div>
-                <img src="<?= get_image('assets/img/profile-3.jpg') ?>" alt="" class="card-img rounded-circle"
-                  style="width: 60px; height: 60px;" />
-              </div>
-              <div class="d-flex justify-content-between align-items-center ml-auto">
-                <h6 class="mt-2 fw-bold text-black">Lamidi Clara</h6>
-                <small class="mx-2">- 2 hours ago</small>
-              </div>
+            <div class="ms-5">
+              <button class="btn btn-sm btn-warning bg-warning text-white" type="button">Reply</button>
+              <button class="btn btn-sm btn-primary bg-primary text-white" type="button">View Replies</button>
+              <button class="btn btn-sm btn-danger bg-danger text-white" type="button">Delete</button>
             </div>
-            <p class="ms-5 text-dark">
-              This will be the comment section.This will be the comment section.This will be the comment section.This
-              will be the comment section.
-            </p>
           </div>
+
         </div>
       </div>
 

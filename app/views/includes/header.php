@@ -12,7 +12,7 @@ $currentUser = Application::$app->currentUser;
 
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md navbar-light bg-light text-center align-items-center" aria-label="Fourth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand logo mx-3" href="<?= ROOT ?>">Natti<span>Buzz</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -32,7 +32,7 @@ $currentUser = Application::$app->currentUser;
                         <a class="nav-link <?= URL(0) === 'friends' ? 'active' : '' ?>" href="<?= ROOT ?>friends">Friends</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= URL(0) === 'market' ? 'active' : '' ?>" href="<?= ROOT ?>market">Market</a>
+                        <a class="nav-link <?= URL(0) === 'markets' ? 'active' : '' ?>" href="<?= ROOT ?>markets">Market</a>
                     </li>
                 </ul>
                 <div class="d-flex flex-column flex-sm-row w-50 gap-2">

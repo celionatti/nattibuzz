@@ -34,13 +34,13 @@ use Core\Helpers;
 
                 <p class="text-white text-center bg-black mx-auto p-2 my-3 fw-semibold">By clicking Create account, you agree to the terms of use.</p>
 
-                <button class="w-100 btn btn-lg btn-dark" type="submit">Create Account</button>
+                <button class="w-100 btn btn-lg btn-dark bg-dark text-white" type="submit">Create Account</button>
                 <hr class="my-1">
-                <div class="text-muted text-center my-1">Already have an account? <a href="<?= ROOT ?>auth/login" class="text-black">Login</a></div>
+                <div class="text-dark text-center my-1">Already have an account? <a href="<?= ROOT ?>auth/login" class="text-black">Login</a></div>
 
-                <p class="mb-1 text-muted text-center">&copy; 2020 - <?= date("Y"); ?></p>
+                <p class="mb-1 text-dark text-center">&copy; 2020 - <?= date("Y"); ?></p>
 
-                <p class="text-muted text-center">
+                <p class="text-dark text-center">
                     <?= $this->getSiteTitle(); ?>, Inc. All Rights Reserved.
                 </p>
                 </form>
